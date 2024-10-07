@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #FADADD, #89CFF0);
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #fff;
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 3em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 20px;
+        }
+        .menu-item {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 220px;
+            text-align: center;
+            transition: all 0.4s ease;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            color: #333;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            z-index: -1;
+            transition: opacity 0.4s ease;
+            opacity: 0;
+        }
+        .menu-item:hover:before {
+            opacity: 0.3;
+        }
+        .butterfly {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    .butterfly-1  { top: 30%; left: 50%; transform: translateX(-50%); } /* Top center */
+    .butterfly-2  { top: 35%; left: 43%; }
+    .butterfly-3  { top: 35%; left: 57%; }
+    .butterfly-4  { top: 40%; left: 38%; }
+    .butterfly-5  { top: 40%; left: 62%; }
+    .butterfly-6  { top: 45%; left: 34%; }
+    .butterfly-7  { top: 45%; left: 66%; }
+    .butterfly-8  { top: 50%; left: 30%; }
+    .butterfly-9  { top: 50%; left: 70%; }
+    .butterfly-10 { top: 55%; left: 33%; }
+    .butterfly-11 { top: 55%; left: 67%; }
+    .butterfly-12 { top: 60%; left: 38%; }
+    .butterfly-13 { top: 60%; left: 62%; }
+    .butterfly-14 { top: 65%; left: 45%; }
+    .butterfly-15 { top: 65%; left: 55%; }
+    .butterfly-16 { top: 70%; left: 50%; transform: translateX(-50%); } /* Bottom center */
+    .butterfly-17 { top: 75%; left: 48%; }
+    .butterfly-18 { top: 75%; left: 52%; }
+
+        /* Mobile-friendly adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            .menu-item {
+                width: 180px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome, My Love <3 </h1>
+
+    <!-- Butterfly Decorations -->
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-1">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-2">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-3">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-4">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-5">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-6">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-7">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-8">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-9">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-10">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-11">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-12">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-13">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-14">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-15">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-16">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-17">
+<img src="butterfly.png" alt="Butterfly" class="butterfly butterfly-18">
+
+
+    <!-- Menu of Letters -->
+    <div class="menu">
+        <div class="menu-item" onclick="window.location.href='letter1.html'">Open When you miss me</div>
+        <div class="menu-item" onclick="window.location.href='letter2.html'">Open when you feel doubtful about yourself</div>
+        <div class="menu-item" onclick="window.location.href='letter3.html'">Open when you feel angry</div>
+        <div class="menu-item" onclick="window.location.href='letter4.html'">Open when you feel frustrated</div>
+        <div class="menu-item" onclick="window.location.href='letter5.html'">Open when you can't sleep(heh)</div>
+        <div class="menu-item" onclick="window.location.href='letter6.html'">Open when you feel really brainfucked</div>
+        <div class="menu-item" onclick="window.location.href='letter7.html'">Open when you embarrased as hell</div>
+        <div class="menu-item" onclick="window.location.href='letter8.html'">Open when you feel happy</div>
+        <div class="menu-item" onclick="window.location.href='letter9.html'">Open when you feel like I did something wrong</div>
+        <div class="menu-item" onclick="window.location.href='letter10.html'">Open when you had a bad dream</div>
+              <!-- Add more letter links as needed -->
+    </div>
+
+</body>
+</html>
